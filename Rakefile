@@ -11,7 +11,7 @@ namespace :db do
   
   desc 'drops the table'
   task :drop => :environment do
-    Student.
+    Student.drop_table
   end
   
   desc 'seed that database with some dummy data'
