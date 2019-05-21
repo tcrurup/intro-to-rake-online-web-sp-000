@@ -9,6 +9,11 @@ namespace :db do
     Student.create_table
   end
   
+  desc 'drops the table'
+  task :drop => :environment do
+    Student.
+  end
+  
   desc 'seed that database with some dummy data'
   task :seed do
     require_relative './db/seeds.rb'
